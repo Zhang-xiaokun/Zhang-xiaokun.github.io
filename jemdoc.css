@@ -89,16 +89,49 @@ div.menu-item {
 	text-indent: -16px;
 }
 
+
+
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+	/*border-bottom: 3px double gray;*/
+	width: 80%;
+	height: 40px;
+    background-color: white; /* 背景颜色 */
+    overflow: hidden; /* 清除浮动 */
+    position: fixed; /* 固定位置 */
+    /*top: 0; !* 顶部对齐 *!*/
+    z-index: 1000; /* 确保在内容之上 */
+
 }
 
-/* Reduce space if we begin the page with a title. */
-div#toptitle + h2, div#toptitle + h3 {
-	margin-top: -0.7em;
+.nav-list {
+    list-style-type: none; /* 移除列表默认的点状符号 */
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
+
+.nav-list li {
+    float: right; /* 使列表项水平排列 */
+}
+
+.nav-list li a {
+    display: block; /* 使链接块级显示，撑满整个li */
+    color: white; /* 文字颜色 */
+    text-align: center; /* 文字居中 */
+    padding: 14px 20px; /* 内边距 */
+    text-decoration: none; /* 移除下划线 */
+	color: #022b6d;
+}
+
+/* 链接 - 鼠标悬停 */
+.nav-list li a:hover {
+    background-color: whitesmoke; /* 鼠标悬停时的背景颜色 */
+}
+
+
+/* Reduce space if we begin the page with a title. */
+
 
 div#subtitle {
 	margin-top: 0.0em;
